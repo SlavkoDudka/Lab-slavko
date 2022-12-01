@@ -1,15 +1,25 @@
-#include<stdio.h>
-#include<math.h>
-
+﻿#include <stdio.h>
+#include <math.h>
 int main() {
+	int a, c;
+	float b, S, P, p;
+	printf("Enter the length of the first leg a = ");
+	scanf("%d", &a);
+	printf("Enter the length of the hypotenuse b = ");
+	scanf("%d", &b);
+	if (a < c) {
+		b = pow(c, 2) - pow(a, 2);
+		b = sqrt(b);
+		printf("The length of the second leg = %f\n", b);
+	}
+	else { printf("The leg cannot be longer than the hypotenuse"); }
+	b = 0.5 * a * b;
+	printf("Area of ​​the triangle = %f", S);
+	scanf();
 
-	int x, y;
-	float f;
+	P= a + b + c;
 
-	printf("Enter x,y:\n");
-	scanf_s("%d, %d", &x, &y);
+	p = P / 2;
 
-	f = (pow(x, 2) + pow(y, 2)) / (sqrt(x + y));
-	printf("Result:%.2f\n", f);
-	return 0;
+	S = sqrt(p * (p - a) * (p - b) * (p - c));
 }
