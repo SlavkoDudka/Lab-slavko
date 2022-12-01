@@ -1,15 +1,21 @@
-#include<stdio.h>
-#include<math.h>
+#include <stdio.h>
+#include <math.h>
 
-int main() {
+int main() { //a
 
-	int x, y;
-	float f;
 
-	printf("Enter x,y:\n");
-	scanf_s("%d, %d", &x, &y);
+    int sum = 0, square;
+    printf("Odd numbers in the range [20;30]:");
+    for (int i = 20; i <= 30; i++)
+    {
+        if (i % 2 == 0)
+            continue;
+        printf("%d,", i);
 
-	f = (pow(x, 2) + pow(y, 2)) / (sqrt(x + y));
-	printf("Result:%.2f\n", f);
-	return 0;
+        sum += pow(i, 2);
+    }
+    printf("\n");
+    printf("\n\tSuma square=%d\n", sum);
+
+    return 0;
 }
